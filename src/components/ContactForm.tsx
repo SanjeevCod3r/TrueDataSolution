@@ -80,7 +80,7 @@ const ContactForm = () => {
           timeline: '',
           additionalInfo: ''
         });
-      }, 3000);
+      }, 5000);
     } catch (err) {
       setIsSubmitting(false);
       setError('Failed to submit form. Please try again later or contact us directly.');
