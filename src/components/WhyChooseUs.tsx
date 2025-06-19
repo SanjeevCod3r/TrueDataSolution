@@ -90,7 +90,7 @@ const WhyChooseUs = () => {
           <div className="mt-8 text-center">
             <div className="inline-flex items-center space-x-4 bg-blue-50 px-6 py-4 rounded-lg">
               <div className="text-center">
-                <div className="text-2xl font-bold text-blue-600">100%</div>
+                <div className="text-2xl font-bold text-blue-600">99%</div>
                 <div className="text-sm text-gray-600">Data Accuracy</div>
               </div>
               <div className="text-center">

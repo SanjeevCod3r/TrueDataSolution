@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Database, Menu, X } from 'lucide-react';
 
 const Header = () => {
@@ -46,12 +46,14 @@ const Header = () => {
             >
               Why Choose Us
             </button>
-            <button 
-              onClick={() => scrollToSection('contact')}
+            <a 
+              href="https://wa.me/message/3GE5JHLTIOBRI1"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors duration-200"
             >
               Contact Us
-            </button>
+            </a>
           </nav>
 
           <button 
@@ -89,12 +91,14 @@ const Header = () => {
               >
                 Why Choose Us
               </button>
-              <button 
-                onClick={() => scrollToSection('contact')}
+              <a 
+                href="https://wa.me/message/3GE5JHLTIOBRI1"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="block w-full text-left px-3 py-2 text-blue-600 font-medium"
               >
                 Contact Us
-              </button>
+              </a>
             </div>
           </div>
         )}

@@ -23,7 +23,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-blue-400" />
-                <span className="text-gray-300">+1 (555) 123-DATA</span>
+                <span className="text-gray-300">+91 8601329877</span>
               </div>
             </div>
           </div>
@@ -54,7 +54,7 @@ const Footer = () => {
                 <MapPin className="h-5 w-5 text-blue-400 mt-0.5" />
                 <div>
                   <p className="font-medium">Coverage</p>
-                  <p className="text-sm">Global data solutions</p>
+                  <p className="text-sm">Global Data Solutions</p>
                 </div>
               </div>
             </div>
@@ -64,7 +64,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © 2024 True Data Solution. All rights reserved.
+              © 2025 True Data Solution. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors duration-200">
