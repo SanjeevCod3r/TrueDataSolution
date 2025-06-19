@@ -34,35 +34,31 @@ const ContactForm = () => {
     setError('');
     
     try {
-      // Add timestamp to form data
-      const submissionData = {
-        ...formData,
-        timestamp: new Date().toISOString()
-      };
-
-      // Encode the data as URI component
-      const encodedData = Object.keys(submissionData)
-        .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(submissionData[key])}`)
-        .join('&');
-
-      // Send data to Google Sheets
-      const response = await fetch(process.env.REACT_APP_GOOGLE_SCRIPT_URL!, {
-        method: 'POST',
+  
+      fetch("https://script.google.com/macros/s/AKfycbx93H-xaw19vW9pMOSeS_JeXZTKaJ3BKgovXqLqN0gQulXuQxmmUkTAjCv9ofs9oZP2YA/exec", {
+        method: "POST",
+        redirect: "follow",
         headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
+          "Content-Type": "text/plain;charset=utf-8"
         },
-        body: encodedData
-      });
-
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
-
-      const result = await response.json();
-      
-      if (result.result !== 'success') {
-        throw new Error('Submission failed');
-      }
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          company: formData.company,
+          industry: formData.industry,
+          projectType: formData.projectType,
+          dataType: formData.dataType,
+          targetAudience: formData.targetAudience,
+          dataRequirements: formData.dataRequirements,
+          budget: formData.budget,
+          timeline: formData.timeline,
+          additionalInfo: formData.additionalInfo
+        })
+      })
+        .then(res => res.text()) // use text() instead of json() for text/plain
+        .then(data => console.log("Success:", data))
+        .catch(err => console.error("Error:", err));
 
       setIsSubmitting(false);
       setIsSubmitted(true);
