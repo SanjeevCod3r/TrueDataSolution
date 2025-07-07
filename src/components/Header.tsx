@@ -17,8 +17,8 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-2 cursor-pointer hover:text-blue-600 transition-colors duration-200" onClick={() => scrollToSection('home')}>
-            <Database className="h-8 w-8 text-blue-600" />
-            <span className="text-xl font-bold text-gray-900">True Data Solution</span>
+            <img src="/assets/logo/logo.png" alt="True Data Solution Logo" className="h-8 w-8" />
+            <span className="text-xl font-bold text-gray-900 ml-2">True Data Solution</span>
           </div>
           
           <nav className="hidden md:flex space-x-8">

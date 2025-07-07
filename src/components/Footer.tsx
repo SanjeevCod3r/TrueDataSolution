@@ -8,8 +8,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2 mb-6">
-              <Database className="h-8 w-8 text-blue-400" />
-              <span className="text-xl font-bold">True Data Solution</span>
+              <img src="/assets/logo/logo.png" alt="True Data Solution Logo" className="h-8 w-8 filter invert" />
+              <span className="text-xl font-bold ml-2">True Data Solution</span>
             </div>
             <p className="text-gray-300 mb-6 max-w-lg">
               Your trusted partner for precision data mining and business intelligence. 
@@ -23,7 +23,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-blue-400" />
-                <span className="text-gray-300">+91 8601329877</span>
+                <span className="text-gray-300">+91 7607320240</span>
               </div>
             </div>
           </div>
