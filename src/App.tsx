@@ -4,6 +4,9 @@ import Hero from './components/Hero';
 import Services from './components/Services';
 import Pricing from './components/Pricing';
 import WhyChooseUs from './components/WhyChooseUs';
+import Milestones from './components/Milestones';
+import FAQ from './components/FAQ';
+import Newsletter from './components/Newsletter';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
 
@@ -15,6 +18,9 @@ function App() {
       <Services />
       <Pricing />
       <WhyChooseUs />
+      <Milestones />
+      <FAQ />
+      <Newsletter />
       <ContactForm />
       <Footer />
     </div>
